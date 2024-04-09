@@ -3,11 +3,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-    Number9.main(args);
+    Number2.main(args);
     }
 
 }
 
+//Complexity: linear - O(n)
 class Number1{
     public static int FindMin(int[] arr, int n) {
 
@@ -44,6 +45,7 @@ class Number1{
     }
 }
 
+//Complexity: linear - O(n)
 class Number2 {
     public static double FindAVG(double[] arr, int n) {
             if (n == 1) {
@@ -73,7 +75,7 @@ class Number2 {
     }
 }
 
-
+//Complexity: linear - O(n)
 class Number3{
     public static boolean CheckIfPrime(int n, int i){
         if (n <= 2){
@@ -102,6 +104,7 @@ class Number3{
 
 }
 
+//Complexity: factorial - O(n!)
 class Number4{
     public static int factorial(int n){
         if (n == 1){
@@ -120,6 +123,7 @@ class Number4{
     }
 }
 
+//Complexity: Exponential - O(2^n)
 class Number5{
     public static int FibbonacciSequence(int n){
         if(n <= 1){
@@ -138,9 +142,10 @@ class Number5{
     }
 }
 
+//Complexity: Exponential - O(2^n)
 class Number6{
     public static int FindDegree(int n, int deg){
-        if (deg < 1){
+        if (deg == 0){
             return 1;
         }
         else{
@@ -156,6 +161,7 @@ class Number6{
     }
 }
 
+//Complexity: factorial - O(n!)
 class Number7{
     public static void GeneratePerm(String Remaining, String Current){
         if (Remaining.length() == 0){
@@ -175,6 +181,8 @@ class Number7{
         GeneratePerm(perm, "");
     }
 }
+
+//Complexity: linear - O(n)
 class Number8 {
     public static boolean CheckIfClear(String s, int index) {
         if (index == s.length()) {
@@ -200,6 +208,7 @@ class Number8 {
     }
 }
 
+//Complexity: Factorial - O(n!)
 class Number9{
     public static int binomial(int n, int k){
         if(k == 0 || k == n){
@@ -218,7 +227,7 @@ class Number9{
     }
 }
 
-
+//Complexity: linear - O(n) I can't prove that it is logarithmic with (log(min(a, b)))
 class Number10{
     public static int GCD(int n1, int n2){
         if (n2 == 0){
