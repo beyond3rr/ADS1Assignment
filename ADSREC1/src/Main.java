@@ -75,13 +75,13 @@ class Number2 {
     }
 }
 
-//Complexity: linear - O(n)
+//Complexity: O(sqrt(n))
 class Number3{
     public static boolean CheckIfPrime(int n, int i){
         if (n <= 2){
             return false;
         }
-        if (i == n) {
+         if (i * i > n){
             return true;
         }
         if(n % i == 0){
